@@ -6,7 +6,8 @@ https://github.com/gardintrapp/ragnarok
 
 Credit
 -------------
-Copyright (C) 2005, 2015  Oddbjørn Norstrand and Oddbjørn By.
+Copyright (C) 2005, 2015  OddbjÃ¸rn Norstrand and OddbjÃ¸rn By.
 
-Author: Oddbjørn Norstrand <oddbjorn@norstrand.priv.no>, Oddbjørn By
-Maintainer: Oddbjørn Norstrand <oddbjorn@norstrand.priv.no>
+Author: OddbjÃ¸rn Norstrand <oddbjorn@norstrand.priv.no>, OddbjÃ¸rn By
+
+Maintainer: OddbjÃ¸rn Norstrand <oddbjorn@norstrand.priv.no>
