@@ -324,11 +324,11 @@ namespace ragnarok
             // 
             this.linkLabel1.Location = new System.Drawing.Point(484, 9);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(170, 105);
+            this.linkLabel1.Size = new System.Drawing.Size(167, 316);
             this.linkLabel1.TabIndex = 38;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Copyright (C) 2005, 2015  Oddbjørn Norstrand and Oddbjørn By. https://github.com/" +
-    "gardintrapp/ragnarok";
+            this.linkLabel1.Text = "Copyright (C) 2005, 2015  Oddbjørn Norstrand and Oddbjørn By.\r\nhttps://github.com" +
+    "/gardintrapp/ragnarok";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // frmRagnarok
