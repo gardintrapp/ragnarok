@@ -397,7 +397,7 @@ namespace ragnarok
         private String version = "1.1";
 
         //Log
-        string logfilepath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ragnaroklog.txt";
+		string logfilepath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "//ragnaroklog.txt";
         private LinkLabel linkLabel1;
     }
 }
