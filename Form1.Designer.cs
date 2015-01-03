@@ -392,9 +392,9 @@ namespace ragnarok
         private Stopwatch stopWatch = new Stopwatch();
         private Random rnd = new Random();
 
-        private bool onOff = false;
-
         private Button[] btnDay = new Button[7];
+
+        private String version = "1.1";
 
         //Log
         string logfilepath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ragnaroklog.txt";

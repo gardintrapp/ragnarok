@@ -40,6 +40,7 @@ namespace ragnarok
 
         private void frmRagnarok_Load(object sender, EventArgs e)
         {
+            this.Text = "Ragnarok v." + version;
             btnDay[0] = btnMon;
             btnDay[1] = btnTue;
             btnDay[2] = btnWed;
@@ -177,6 +178,7 @@ namespace ragnarok
             num_dates = 0;
             num_correct = 0;
             //Change what UI elements are enabled
+            btnStart.Enabled = false; 
             btnStop.Enabled = true;
             grpDay.Enabled = true;
             tmrSec.Enabled = true; //Start the timer
@@ -190,7 +192,8 @@ namespace ragnarok
             stopWatch.Stop();
             TimeSpan ts = stopWatch.Elapsed;
             tmrSec.Enabled = false;	//Stop the timer
-            btnStop.Enabled = false;
+            btnStop.Enabled = false; 
+            btnStart.Enabled = true; 
             grpDay.Enabled = false;
             if (this.chkLog.Checked)
             {
