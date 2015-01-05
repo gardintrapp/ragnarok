@@ -309,7 +309,7 @@ namespace ragnarok
 
         private Button[] btnDay = new Button[7];
 
-        private String version = "1.1";
+        private String version = "1.2";
 
         //Log
 		string logfilepath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "//ragnaroklog.txt";
