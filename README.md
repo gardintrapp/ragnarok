@@ -1,25 +1,26 @@
 ragnarok
 ========
-
 A program for training oneself in the Doomsday algorithm.
-
-Source
--------------
-https://github.com/gardintrapp/ragnarok
-
-Binaries
--------------
-[Ragnarok Visual Studio binary](http://norstrand.priv.no/files/ragnarok.exe "Ragnarok Visual Studio binary")
-
-[Ragnarok Mono binary](http://norstrand.priv.no/files/ragnarok_mono.exe "Ragnarok Mono binary")
 
 Screen shot
 -------------
 ![Screen shot](http://norstrand.priv.no/images/ragnarok.png "Screen shot")
 
+Source
+-------------
+https://github.com/gardintrapp/ragnarok
+
 Installation
 -------------
-The program has been successfully compiled with Visual Studio 2013 on MS Windows 7 x86_64 and with Mono on GNU/Linux x86_64. Execute ragnarok.exe to run the program.
+The program has been successfully compiled with Visual Studio 2013 on MS Windows 7 x86_64 and with Mono on GNU/Linux x86_64. Execute ragnarok.exe to run the program. The program can also be installed from binaries, see below.
+
+Binaries
+-------------
+Binaries compiled with Visual Studio 2013 and Mono are provided.
+
+[ragnarok-1.2.zip](http://norstrand.priv.no/files/ragnarok-1.2.exe "Ragnarok v1.2 Visual Studio binary")
+
+[ragnarok_mono-1.2.tar.gz](http://norstrand.priv.no/files/ragnarok_mono-1.2.exe "Ragnarok v1.2 Mono binary")
 
 Credit
 -------------
