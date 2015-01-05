@@ -18,9 +18,9 @@ Binaries
 -------------
 Binaries compiled with Visual Studio 2013 and Mono are provided.
 
-[ragnarok-1.2.zip](http://norstrand.priv.no/files/ragnarok-1.2.exe "Ragnarok v1.2 Visual Studio binary")
+[ragnarok-1.2.zip](http://norstrand.priv.no/files/ragnarok-1.2.zip "Ragnarok v1.2 Visual Studio binary")
 
-[ragnarok_mono-1.2.tar.gz](http://norstrand.priv.no/files/ragnarok_mono-1.2.exe "Ragnarok v1.2 Mono binary")
+[ragnarok_mono-1.2.tar.gz](http://norstrand.priv.no/files/ragnarok_mono-1.2.tar.gz "Ragnarok v1.2 Mono binary")
 
 Credit
 -------------
