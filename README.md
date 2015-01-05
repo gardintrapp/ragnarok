@@ -22,6 +22,10 @@ Binaries compiled with Visual Studio 2013 and Mono are provided.
 
 [ragnarok_mono-1.2.tar.gz](http://norstrand.priv.no/files/ragnarok_mono-1.2.tar.gz "Ragnarok v1.2 Mono binary")
 
+Donations
+-------------
+Bitcoin: 1Jb6VgJt7HrPx2e3P8je1xGWwHyRi2DECZ
+
 Credit
 -------------
 Copyright (C) 2005, 2015  Oddbjørn Norstrand and Oddbjørn By.
