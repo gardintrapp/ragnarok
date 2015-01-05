@@ -129,40 +129,40 @@ namespace ragnarok
             switch (rnd_date.Month)
             {
                 case 1:
-                    lblMonth.Text = "January";
+                    lblMonth.Text = GlobalStrings.MonthJanuary;
                     break;
                 case 2:
-                    lblMonth.Text = "February";
+                    lblMonth.Text = GlobalStrings.MonthFebruary;
                     break;
                 case 3:
-                    lblMonth.Text = "March";
+                    lblMonth.Text = GlobalStrings.MonthMarch;
                     break;
                 case 4:
-                    lblMonth.Text = "April";
+                    lblMonth.Text = GlobalStrings.MonthApril;
                     break;
                 case 5:
-                    lblMonth.Text = "May";
+                    lblMonth.Text = GlobalStrings.MonthMay;
                     break;
                 case 6:
-                    lblMonth.Text = "June";
+                    lblMonth.Text = GlobalStrings.MonthJune;
                     break;
                 case 7:
-                    lblMonth.Text = "July";
+                    lblMonth.Text = GlobalStrings.MonthJuly;
                     break;
                 case 8:
-                    lblMonth.Text = "August";
+                    lblMonth.Text = GlobalStrings.MonthAugust;
                     break;
                 case 9:
-                    lblMonth.Text = "September";
+                    lblMonth.Text = GlobalStrings.MonthSeptember;
                     break;
                 case 10:
-                    lblMonth.Text = "October";
+                    lblMonth.Text = GlobalStrings.MonthOctober;
                     break;
                 case 11:
-                    lblMonth.Text = "November";
+                    lblMonth.Text = GlobalStrings.MonthNovember;
                     break;
                 case 12:
-                    lblMonth.Text = "Desember";
+                    lblMonth.Text = GlobalStrings.MonthDecember;
                     break;
             }
             lblDay.Text = rnd_date.Day.ToString() + '.';
@@ -197,7 +197,7 @@ namespace ragnarok
             grpDay.Enabled = false;
             if (this.chkLog.Checked)
             {
-                string logLine = System.String.Format("{0} 1800={1} 1900={2} 2000={3} \"{4:D} correct of {5:D} tries\" \"time used {6:00}:{7:00}:{8:00}:{9:00}.\" {10:P}",
+                string logLine = System.String.Format(GlobalStrings.LogLine,
                     DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ssZ"),
                     chk1800.Checked.ToString(), chk1900.Checked.ToString(), chk2000.Checked.ToString(),
                     this.num_correct, this.num_dates - 1, ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds,
@@ -274,7 +274,7 @@ namespace ragnarok
             //Se if no century is selected
             if (!chk1800.Checked && !chk1900.Checked && !chk2000.Checked)
             {
-                MessageBox.Show("At least one century must be selected.", "Ragnarok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(GlobalStrings.NoCentury, "Ragnarok", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 chk1800.Checked = true;
             }
         }

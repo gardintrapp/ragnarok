@@ -23,6 +23,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ragnarok
 {
@@ -34,6 +35,8 @@ namespace ragnarok
         [STAThread]
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("nn");
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("nn");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmRagnarok());

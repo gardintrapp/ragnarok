@@ -52,6 +52,7 @@ namespace ragnarok
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRagnarok));
             this.txtLog = new System.Windows.Forms.TextBox();
             this.tmrBlink = new System.Windows.Forms.Timer(this.components);
             this.btnSat = new System.Windows.Forms.Button();
@@ -82,18 +83,9 @@ namespace ragnarok
             // 
             // txtLog
             // 
-            this.txtLog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtLog.Font = new System.Drawing.Font("DejaVu Sans Mono", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLog.Location = new System.Drawing.Point(8, 331);
-            this.txtLog.Multiline = true;
+            resources.ApplyResources(this.txtLog, "txtLog");
             this.txtLog.Name = "txtLog";
             this.txtLog.ReadOnly = true;
-            this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtLog.Size = new System.Drawing.Size(633, 179);
-            this.txtLog.TabIndex = 35;
-            this.txtLog.WordWrap = false;
             // 
             // tmrBlink
             // 
@@ -102,119 +94,88 @@ namespace ragnarok
             // 
             // btnSat
             // 
-            this.btnSat.Location = new System.Drawing.Point(23, 209);
+            resources.ApplyResources(this.btnSat, "btnSat");
             this.btnSat.Name = "btnSat";
-            this.btnSat.Size = new System.Drawing.Size(90, 26);
-            this.btnSat.TabIndex = 14;
             this.btnSat.Tag = "5";
-            this.btnSat.Text = "&Saturday";
             this.btnSat.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // btnFri
             // 
-            this.btnFri.Location = new System.Drawing.Point(23, 172);
+            resources.ApplyResources(this.btnFri, "btnFri");
             this.btnFri.Name = "btnFri";
-            this.btnFri.Size = new System.Drawing.Size(90, 26);
-            this.btnFri.TabIndex = 13;
             this.btnFri.Tag = "4";
-            this.btnFri.Text = "&Friday";
             this.btnFri.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // btnThu
             // 
-            this.btnThu.Location = new System.Drawing.Point(23, 135);
+            resources.ApplyResources(this.btnThu, "btnThu");
             this.btnThu.Name = "btnThu";
-            this.btnThu.Size = new System.Drawing.Size(90, 27);
-            this.btnThu.TabIndex = 12;
             this.btnThu.Tag = "3";
-            this.btnThu.Text = "T&hursday";
             this.btnThu.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // btnWed
             // 
-            this.btnWed.Location = new System.Drawing.Point(23, 98);
+            resources.ApplyResources(this.btnWed, "btnWed");
             this.btnWed.Name = "btnWed";
-            this.btnWed.Size = new System.Drawing.Size(90, 27);
-            this.btnWed.TabIndex = 11;
             this.btnWed.Tag = "2";
-            this.btnWed.Text = "&Wednesday";
             this.btnWed.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // btnTue
             // 
-            this.btnTue.Location = new System.Drawing.Point(23, 61);
+            resources.ApplyResources(this.btnTue, "btnTue");
             this.btnTue.Name = "btnTue";
-            this.btnTue.Size = new System.Drawing.Size(90, 27);
-            this.btnTue.TabIndex = 10;
             this.btnTue.Tag = "1";
-            this.btnTue.Text = "&Tuesday";
             this.btnTue.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // btnMon
             // 
-            this.btnMon.Location = new System.Drawing.Point(23, 24);
+            resources.ApplyResources(this.btnMon, "btnMon");
             this.btnMon.Name = "btnMon";
-            this.btnMon.Size = new System.Drawing.Size(90, 27);
-            this.btnMon.TabIndex = 9;
             this.btnMon.Tag = "DayOfWeek.Monday";
-            this.btnMon.Text = "&Monday";
             this.btnMon.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // chk2000
             // 
+            resources.ApplyResources(this.chk2000, "chk2000");
             this.chk2000.Checked = true;
             this.chk2000.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk2000.Location = new System.Drawing.Point(19, 83);
             this.chk2000.Name = "chk2000";
-            this.chk2000.Size = new System.Drawing.Size(77, 28);
-            this.chk2000.TabIndex = 19;
-            this.chk2000.Text = "&2000";
             this.chk2000.CheckedChanged += new System.EventHandler(this.chkCent_CheckedChanged);
             // 
             // chk1900
             // 
+            resources.ApplyResources(this.chk1900, "chk1900");
             this.chk1900.Checked = true;
             this.chk1900.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk1900.Location = new System.Drawing.Point(19, 55);
             this.chk1900.Name = "chk1900";
-            this.chk1900.Size = new System.Drawing.Size(77, 28);
-            this.chk1900.TabIndex = 18;
-            this.chk1900.Text = "1&900";
             this.chk1900.CheckedChanged += new System.EventHandler(this.chkCent_CheckedChanged);
             // 
             // btnSun
             // 
-            this.btnSun.Location = new System.Drawing.Point(23, 246);
+            resources.ApplyResources(this.btnSun, "btnSun");
             this.btnSun.Name = "btnSun";
-            this.btnSun.Size = new System.Drawing.Size(90, 26);
-            this.btnSun.TabIndex = 15;
             this.btnSun.Tag = "6";
-            this.btnSun.Text = "S&unday";
             this.btnSun.Click += new System.EventHandler(this.btnDay_Click);
             // 
             // chk1800
             // 
+            resources.ApplyResources(this.chk1800, "chk1800");
             this.chk1800.Checked = true;
             this.chk1800.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chk1800.Location = new System.Drawing.Point(19, 28);
             this.chk1800.Name = "chk1800";
-            this.chk1800.Size = new System.Drawing.Size(77, 27);
-            this.chk1800.TabIndex = 17;
-            this.chk1800.Text = "1&800";
             this.chk1800.CheckedChanged += new System.EventHandler(this.chkCent_CheckedChanged);
             // 
             // chkLog
             // 
-            this.chkLog.AutoSize = true;
-            this.chkLog.Location = new System.Drawing.Point(8, 304);
+            resources.ApplyResources(this.chkLog, "chkLog");
+            this.chkLog.Checked = true;
+            this.chkLog.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkLog.Name = "chkLog";
-            this.chkLog.Size = new System.Drawing.Size(54, 21);
-            this.chkLog.TabIndex = 34;
-            this.chkLog.Text = "&Log";
             this.chkLog.UseVisualStyleBackColor = true;
             // 
             // grpDay
             // 
+            resources.ApplyResources(this.grpDay, "grpDay");
             this.grpDay.Controls.Add(this.btnSun);
             this.grpDay.Controls.Add(this.btnSat);
             this.grpDay.Controls.Add(this.btnFri);
@@ -222,98 +183,58 @@ namespace ragnarok
             this.grpDay.Controls.Add(this.btnWed);
             this.grpDay.Controls.Add(this.btnTue);
             this.grpDay.Controls.Add(this.btnMon);
-            this.grpDay.Enabled = false;
-            this.grpDay.Location = new System.Drawing.Point(344, 3);
             this.grpDay.Name = "grpDay";
-            this.grpDay.Size = new System.Drawing.Size(134, 295);
-            this.grpDay.TabIndex = 32;
             this.grpDay.TabStop = false;
-            this.grpDay.Text = "Day";
             // 
             // grpCenturies
             // 
+            resources.ApplyResources(this.grpCenturies, "grpCenturies");
             this.grpCenturies.Controls.Add(this.chk2000);
             this.grpCenturies.Controls.Add(this.chk1900);
             this.grpCenturies.Controls.Add(this.chk1800);
-            this.grpCenturies.Location = new System.Drawing.Point(8, 3);
             this.grpCenturies.Name = "grpCenturies";
-            this.grpCenturies.Size = new System.Drawing.Size(105, 123);
-            this.grpCenturies.TabIndex = 31;
             this.grpCenturies.TabStop = false;
-            this.grpCenturies.Text = "Centuries";
             // 
             // lblRes
             // 
-            this.lblRes.AutoSize = true;
-            this.lblRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRes.Location = new System.Drawing.Point(171, 160);
+            resources.ApplyResources(this.lblRes, "lblRes");
             this.lblRes.Name = "lblRes";
-            this.lblRes.Size = new System.Drawing.Size(0, 36);
-            this.lblRes.TabIndex = 30;
             // 
             // lblYear
             // 
-            this.lblYear.AutoSize = true;
-            this.lblYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYear.Location = new System.Drawing.Point(171, 104);
+            resources.ApplyResources(this.lblYear, "lblYear");
             this.lblYear.Name = "lblYear";
-            this.lblYear.Size = new System.Drawing.Size(77, 36);
-            this.lblYear.TabIndex = 29;
-            this.lblYear.Text = "Year";
             // 
             // lblMonth
             // 
-            this.lblMonth.AutoSize = true;
-            this.lblMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMonth.Location = new System.Drawing.Point(171, 58);
+            resources.ApplyResources(this.lblMonth, "lblMonth");
             this.lblMonth.Name = "lblMonth";
-            this.lblMonth.Size = new System.Drawing.Size(99, 36);
-            this.lblMonth.TabIndex = 28;
-            this.lblMonth.Text = "Month";
             // 
             // btnStop
             // 
+            resources.ApplyResources(this.btnStop, "btnStop");
             this.btnStop.BackColor = System.Drawing.SystemColors.Control;
-            this.btnStop.Enabled = false;
             this.btnStop.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnStop.Location = new System.Drawing.Point(8, 271);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(96, 27);
-            this.btnStop.TabIndex = 27;
-            this.btnStop.Text = "St&op";
             this.btnStop.UseVisualStyleBackColor = false;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // lblDay
             // 
-            this.lblDay.AutoSize = true;
-            this.lblDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDay.Location = new System.Drawing.Point(171, 12);
+            resources.ApplyResources(this.lblDay, "lblDay");
             this.lblDay.Name = "lblDay";
-            this.lblDay.Size = new System.Drawing.Size(67, 36);
-            this.lblDay.TabIndex = 26;
-            this.lblDay.Text = "Day";
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(8, 238);
+            resources.ApplyResources(this.btnStart, "btnStart");
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(96, 27);
-            this.btnStart.TabIndex = 25;
-            this.btnStart.Text = "St&art";
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblTime
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.lblTime, "lblTime");
             this.lblTime.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTime.Location = new System.Drawing.Point(171, 233);
             this.lblTime.Name = "lblTime";
-            this.lblTime.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblTime.Size = new System.Drawing.Size(63, 69);
-            this.lblTime.TabIndex = 24;
-            this.lblTime.Text = "0";
             // 
             // tmrSec
             // 
@@ -322,20 +243,15 @@ namespace ragnarok
             // 
             // linkLabel1
             // 
-            this.linkLabel1.Location = new System.Drawing.Point(484, 9);
+            resources.ApplyResources(this.linkLabel1, "linkLabel1");
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(167, 316);
-            this.linkLabel1.TabIndex = 38;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Copyright (C) 2005, 2015  Oddbjørn Norstrand and Oddbjørn By.\r\nhttps://github.com" +
-    "/gardintrapp/ragnarok";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // frmRagnarok
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 522);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.txtLog);
             this.Controls.Add(this.chkLog);
@@ -349,7 +265,6 @@ namespace ragnarok
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblTime);
             this.Name = "frmRagnarok";
-            this.Text = "Ragnarok";
             this.Load += new System.EventHandler(this.frmRagnarok_Load);
             this.grpDay.ResumeLayout(false);
             this.grpCenturies.ResumeLayout(false);
