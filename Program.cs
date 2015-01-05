@@ -35,8 +35,8 @@ namespace ragnarok
         [STAThread]
         static void Main()
         {
-            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("nn");
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("nn");
+            //Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("nn");
+            //Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("nn");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmRagnarok());
